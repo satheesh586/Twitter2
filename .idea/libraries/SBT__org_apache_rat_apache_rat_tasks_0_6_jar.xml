@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: org.apache.rat:apache-rat-tasks:0.6:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.rat/apache-rat-tasks/jars/apache-rat-tasks-0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.apache.rat/apache-rat-tasks/srcs/apache-rat-tasks-0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

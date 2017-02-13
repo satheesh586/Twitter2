@@ -1,0 +1,58 @@
+ 
+@-webkit-keyframes fade {
+   0% {
+     color:#BCBCBC;
+   }
+   100% {
+      color:#FFF;
+   }
+}
+
+
+nav#primary a:hover{
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1s;
+
+}
+
+ 
+@-webkit-keyframes bounce {
+   from {
+      margin-right: 35px;
+      opacity:.5;
+   }
+   to {
+      margin-right: 55px;
+      opacity:1;
+   }
+}
+ 
+.services-box section:hover a{
+   -webkit-animation-name: bounce;
+   -webkit-animation-duration: 300ms;
+   -webkit-animation-iteration-count: 2;
+   -webkit-animation-direction: alternate;
+}
+
+
+
+ 
+@-webkit-keyframes anchorfade {
+   0% {
+     color:#6c7c86;
+   }
+   100% {
+      color:#3b444a;
+   }
+}
+
+
+
+a:hover{
+color: #3b444a;
+-webkit-animation-name: anchorfade;
+-webkit-animation-duration: 1s;
+}
+
+
+ 

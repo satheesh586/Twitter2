@@ -1,0 +1,53 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+#GET     /                           controllers.Application.index(page="0")
+
+GET         /                                              controllers.Application.index()
+
+GET         /test                                          controllers.Application.test()
+
+GET         /handles                                       controllers.Application.getHandles(id)
+
+GET         /brandnames                                    controllers.Application.getBrandNames(id)
+
+GET         /entities                                      controllers.Application.getEntities()
+
+POST        /query                                         controllers.Application.addQuery()
+
+GET         /ckey                                          controllers.Application.addCKey()
+
+GET         /analytics/impressions/:id                      controllers.Application.impressions(id: Integer)
+
+GET         /analytics/mentions/:id                        controllers.Application.mentions(id: Integer)
+
+GET         /analytics/psentiment/:id                      controllers.Application.positiveSentimentScore(id: Integer)
+
+GET         /analytics/nsentiment/:id                      controllers.Application.negativeSentimentScore(id: Integer)
+
+GET         /analytics/geographicaldistribution/:id        controllers.Application.geographicalDistribution(id: Integer)
+
+GET         /analytics/mostretweetedtweets/:id             controllers.Application.mostReTweetedTweets(id: Integer)
+
+GET         /analytics/trendinghashtags/:id                controllers.Application.trendingHashTags(id: Integer)
+
+GET         /adduser                                       controllers.Application.addUser(screenName,accessToken,accessSecret)
+
+GET         /login                                         controllers.Application.login()
+
+GET         /analytics/influentialfollowers/:id            controllers.Application.influentialFollower(id :Integer)
+
+GET         /getuserscreenname                             controllers.Application.getUserScreenName()
+
+GET         /dashboard                                      controllers.Application.dashboard()
+
+# POST        /editQuery           controllers.Application.addCKey()
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file                                  controllers.Assets.at(path="/public", file)
+
+GET         /getUserToken                                  controllers.Application.getUserToken(oauth_token,oauth_verifier)
+
+GET         /logout                                        controllers.Application.logout()
